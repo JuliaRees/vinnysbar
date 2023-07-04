@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-
-        <!-- The title for SEO & browser tabs -->
-        <title> Vinny's Beach Bar </title>
-
-        <!-- Viewport meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-        <!------------ Google Fonts  ------------>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-
-        <!-- My own custom stylesheet -->
-        <link rel="stylesheet" href="/style.css">
-
-    </head>
-    <body>
+---
+layout: default 
+title: Homepage
+seo: 
+	title: This should appear in the browser tab
+	description: 
+	keywords: 
+	social_image: 
+	hide-from-google: true
+---
 
         <header class="bg-image bg-headeroption padded tall-90 grid-right">
             <div class="right">
@@ -28,12 +15,14 @@
             </div>
         </header>
 
-        <section class="grid tall-80">
-            <div class="col-4_sm-12 bg-image bg-skate padded mob-hide dark-text right"> 
-                <h2> drinks. <br> food. <br> vibes. </h2>
+        <section class="grid tall-80 border">
+            <div class="col-4_sm-12 bg-image bg-skate padded-r pt-3p mob-hide dark-text right bg-overlay bg-overlay-gradient"> 
+                <div class="infront">
+                    <h2> drinks. <br> food. <br> vibes. </h2>
+                </div>
             </div>
             <div class="col-8_sm-12 bg-image bg-trees grid"> 
-                <div class="col-12 right padded">
+                <div class="col-12 right padded-r pt-3p">
                     <h2 class="text-lg dark-text"> 5pm - late <span> everyday. </span></h2>
                 </div>
             </div>
@@ -42,7 +31,7 @@
 
         <!-- Menu Section -->
 
-        <section class="padded bg-light dark-text menu grid-center">
+        <section class="padded bg-light dark-text menu grid-center border-menu">
 
             <div class="col-12 center">
                 <h2 class="text-lg red-text"> menu. </h2>
@@ -167,11 +156,11 @@
 
         </section>
 
-        <footer class="bg-image bg-footer tall-60">
+        <footer class="bg-image bg-footer tall-70 border-top">
             <div class="padded-t-1 padded-b-2"> 
                 <h2 class="red-text"> be there </h2>
                 <h3 class="red-text"> or be square. </h3>
-                <p class="dark-text"> <a href="mailto:vinnysbar@gmail.com"> email us: vinnysbar@gmail.com</a> </p>
+                <p class="dark-text strong"> <a href="mailto:vinnysbar@gmail.com"> email us: vinnysbar@gmail.com</a> </p>
                 <p class="dark-text"> <a href="tel:+198384739374"> call us: +198384739374 </a> </p>
             </div>
 
@@ -180,6 +169,3 @@
             </div>
         </footer>
         
-
-    </body>
-</html>
