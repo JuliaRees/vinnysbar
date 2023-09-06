@@ -408,15 +408,45 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.mt-\[51\%\] {
+  margin-top: 51%;
+}
+.mt-\[41\%\] {
+  margin-top: 41%;
+}
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
+}
+.min-h-60 {
+  min-height: 60vh;
+}
+.min-h-70 {
+  min-height: 70vh;
+}
+.items-center {
+  align-items: center;
 }
 .border {
   border-width: 1px;
 }
+.bg-left {
+  background-position: left;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 .text-lg {
   font-size: 1.125rem;;
   line-height: 1.2;
+}
+.leading-\[2\.5rem\] {
+  line-height: 2.5rem;
 }
 
 * {
@@ -424,6 +454,32 @@ video {
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+  border-width: 8px;
+}
+
+@media (min-width: 640px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(31 182 255 / var(--tw-border-opacity));
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(126 91 239 / var(--tw-border-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 73 219 / var(--tw-border-opacity));
+  }
+}
+
 
 /* Re-usable Utiity Classes  */
 
@@ -475,14 +531,14 @@ h2,h3,h4,h5,h6 {
 }
 h1 {
     font-family: 'Monoton';
-    font-size: 10rem;
     line-height: 0.8;
+    font-size: 3.5rem;
 }
 
 h1 span {
     display: block;
-    font-size: 3.5rem;
     line-height: 0.9;
+    font-size: 2rem;
 }
 
 h2 { font-size: 2.5rem;}
@@ -566,7 +622,6 @@ footer h2 {
 .bg-image {
     background-color: #183039;
     background-size: cover; 
-    background-position: center; 
     background-repeat: no-repeat;
 }
 
@@ -632,15 +687,26 @@ footer h2 {
 
     .mob-padded-t-0 { padding-top: 0; }
 
-    h1 { font-size: 6rem; }
-    h1 span { font-size: 2rem; }  
-    
-    footer a { font-size: 1rem;}
+
 
 }
 
 /* Custom Media Query XXS  */
 @media(max-width: 25em) {
-    h1 { font-size: 4.5rem; }
-    h1 span { font-size: 1.5rem; }  
+    
+
+}
+@media (min-width: 640px) {
+  .sm\:text-right {
+    text-align: right;
+  }
+  .sm\:text-lg {
+    font-size: 1.125rem;;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 768px) {
+  .md\:min-h-90 {
+    min-height: 90vh;
+  }
 }
